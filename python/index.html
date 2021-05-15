@@ -1,1 +1,190 @@
 
+<div class="mui-col-md-6 tutorial-content">
+<h1 class="qa_title">Complex Numbers in Python?</h1>
+<div class="qa_category">
+<a href="https://www.tutorialspoint.com/questions/category/Python" target="_blank"><span>Python</span></a><a href="https://www.tutorialspoint.com/questions/category/Server-Side-Programming" target="_blank"><span>Server Side Programming</span></a><a href="https://www.tutorialspoint.com/questions/category/Programming" target="_blank"><span>Programming</span></a><hr>
+<div id="adp_top_ads" style="text-align:center !important;"><div id="00000001-3d8608a4-cc37-44ee-99b6-5a211f980e85" class="_ap_apex_ad" data-section="00000001-3d8608a4-cc37-44ee-99b6-5a211f980e85" data-orig-id="2d1bb2c4-eb72-471d-9c80-1bf5514728c1" data-render-time="1621098245428" data-ap-network="adpTags" style="text-align: center; margin: 10px auto; width: 650px; height: 150px; overflow: hidden; display: block;" data-refresh-time="1621098285653" data-timeout="607"><div id="ADP_40046_650x150_00000001-3d8608a4-cc37-44ee-99b6-5a211f980e85" style="text-align: center; margin: 0 auto;" data-google-query-id="CN7W89uVzPACFQJmDAodEb0Hkw">
+
+<div id="google_ads_iframe_/103512698/ADP_40046_650X150_2d1bb2c4-eb72-471d-9c80-1bf5514728c1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/103512698/ADP_40046_650X150_2d1bb2c4-eb72-471d-9c80-1bf5514728c1_0" title="3rd party ad content" name="google_ads_iframe_/103512698/ADP_40046_650X150_2d1bb2c4-eb72-471d-9c80-1bf5514728c1_0" width="442" height="138" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="conversion-measurement 'src'" srcdoc="" style="border: 0px; vertical-align: bottom;" data-google-container-id="7" data-load-complete="true"></iframe></div></div></div></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<hr>
+<p>A complex number is created from real numbers. Python complex number can be created either using direct assignment statement or by using complex () function.</p><p>Complex numbers which are mostly used where we are using two real numbers. For instance, an electric circuit which is defined by voltage(V) and current(C) are used in geometry, scientific calculations and calculus.</p><h2>Syntax</h2><pre class="result notranslate">complex([real[, imag]])</pre><h2>Creating a simple complex number in python</h2><pre class="result notranslate">&gt;&gt;&gt; c = 3 +6j
+&gt;&gt;&gt; print(type(c))
+&lt;class 'complex'&gt;
+&gt;&gt;&gt; print(c)
+(3+6j)
+&gt;&gt;&gt;
+&gt;&gt;&gt; c1 = complex(3,6)
+&gt;&gt;&gt; print(type(c1))
+&lt;class 'complex'&gt;
+&gt;&gt;&gt; print(c1)
+(3+6j)</pre><p>From above results, we can see python complex numbers are of type complex. Each complex number consist of one real part and one imaginary part.</p><h3>Python Complex Numbers- Attributes and Functions</h3><pre class="prettyprint notranslate prettyprinted" style=""><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="com">#Complex Number:</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> c </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="lit">3</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="lit">6j</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="com">#Real Part of complex number</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="kwd">print</span><span class="pun">(</span><span class="str">'Complex Number: Real Part is = '</span><span class="pun">,</span><span class="pln"> c</span><span class="pun">.</span><span class="pln"> real</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">Complex</span><span class="pln"> </span><span class="typ">Number</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Real</span><span class="pln"> </span><span class="typ">Part</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3.0</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="com">#Imaginary Part of complex number</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="kwd">print</span><span class="pun">(</span><span class="str">'Complex Number: Imaginary Part is = '</span><span class="pun">,</span><span class="pln"> c</span><span class="pun">.</span><span class="pln"> imag</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">Complex</span><span class="pln"> </span><span class="typ">Number</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Imaginary</span><span class="pln"> </span><span class="typ">Part</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">6.0</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="com">#Conjugate of complex number</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="kwd">print</span><span class="pun">(</span><span class="str">'Complex Number: conjugate Part = '</span><span class="pun">,</span><span class="pln"> c</span><span class="pun">.</span><span class="pln"> conjugate</span><span class="pun">())</span><span class="pln">
+</span><span class="typ">Complex</span><span class="pln"> </span><span class="typ">Number</span><span class="pun">:</span><span class="pln"> conjugate </span><span class="typ">Part</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="lit">3</span><span class="pun">-</span><span class="lit">6j</span><span class="pun">)</span></pre><h2>Mathematical Calculations on Complex numbers</h2><p>We can do simple mathematical calculations on complex numbers:</p><pre class="prettyprint notranslate prettyprinted" style=""><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="com">#first complex number</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> c1 </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="lit">6j</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="com">#Second complex number</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> c2 </span><span class="pun">=</span><span class="pln"> </span><span class="lit">6</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="lit">15j</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="com">#Addition</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="kwd">print</span><span class="pun">(</span><span class="str">"Addition of two complex number ="</span><span class="pun">,</span><span class="pln"> c1 </span><span class="pun">+</span><span class="pln"> c2</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">Addition</span><span class="pln"> </span><span class="kwd">of</span><span class="pln"> two complex number </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="lit">9</span><span class="pun">+</span><span class="lit">21j</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="com">#Subtraction</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="kwd">print</span><span class="pun">(</span><span class="str">"Subtraction of two complex number ="</span><span class="pun">,</span><span class="pln"> c1 </span><span class="pun">-</span><span class="pln"> c2</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">Subtraction</span><span class="pln"> </span><span class="kwd">of</span><span class="pln"> two complex number </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(-</span><span class="lit">3</span><span class="pun">-</span><span class="lit">9j</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="com">#Multiplication</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="kwd">print</span><span class="pun">(</span><span class="str">"Multiplication of two complex number ="</span><span class="pun">,</span><span class="pln"> c1 </span><span class="pun">*</span><span class="pln"> c2</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">Multiplication</span><span class="pln"> </span><span class="kwd">of</span><span class="pln"> two complex number </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(-</span><span class="lit">72</span><span class="pun">+</span><span class="lit">81j</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="com">#Division</span><span class="pln">
+</span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="kwd">print</span><span class="pun">(</span><span class="str">"Division of two complex number ="</span><span class="pun">,</span><span class="pln"> c1 </span><span class="pun">/</span><span class="pln"> c2</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">Division</span><span class="pln"> </span><span class="kwd">of</span><span class="pln"> two complex number </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="lit">0.4137931034482759</span><span class="pun">-</span><span class="lit">0.03448275862068964j</span><span class="pun">)</span></pre><p>However, complex numbers don’t support comparison operators like &lt;, &gt;, &lt;=, =&gt; and it will through TypeError message:</p><pre class="prettyprint notranslate prettyprinted" style=""><span class="pun">&gt;&gt;&gt;</span><span class="pln"> c2 </span><span class="pun">&lt;=</span><span class="pln"> c2
+</span><span class="typ">Traceback</span><span class="pln"> </span><span class="pun">(</span><span class="pln">most recent call </span><span class="kwd">last</span><span class="pun">):</span><span class="pln">
+</span><span class="typ">File</span><span class="pln"> </span><span class="str">"&lt;pyshell#40&gt;"</span><span class="pun">,</span><span class="pln"> line </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> </span><span class="str">&lt;module&gt;</span><span class="pln">
+c2 </span><span class="pun">&lt;=</span><span class="pln"> c2
+</span><span class="typ">TypeError</span><span class="pun">:</span><span class="pln"> </span><span class="str">'&lt;='</span><span class="pln"> </span><span class="kwd">not</span><span class="pln"> supported between instances </span><span class="kwd">of</span><span class="pln"> </span><span class="str">'complex'</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> </span><span class="str">'complex'</span></pre><h2>Python cmath module</h2><p>Python cmath module provide access to mathematical functions for complex numbers. Let’s looks at some of the important features of complex numbers using math module function.</p><h2>Phase of complex number</h2><p>The phase of a complex number is the angle between the real axis and the vector representing the imaginary part.</p><p>The phase returned by math and cmath modules are in radians and we use the numpy.degrees() function to convert it to degrees.</p><pre class="prettyprint notranslate prettyprinted" style=""><span class="kwd">import</span><span class="pln"> cmath</span><span class="pun">,</span><span class="pln"> math</span><span class="pun">,</span><span class="pln"> numpy
+c </span><span class="pun">=</span><span class="pln"> </span><span class="lit">4</span><span class="pun">+</span><span class="pln"> </span><span class="lit">4j</span><span class="pln">
+</span><span class="com"># phase</span><span class="pln">
+phase </span><span class="pun">=</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">phase</span><span class="pun">(</span><span class="pln">c</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'4+ 4j Phase ='</span><span class="pun">,</span><span class="pln"> phase</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'Phase in Degrees ='</span><span class="pun">,</span><span class="pln"> numpy</span><span class="pun">.</span><span class="pln">degrees</span><span class="pun">(</span><span class="pln">phase</span><span class="pun">))</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'-4-4j Phase ='</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">phase</span><span class="pun">(-</span><span class="lit">4</span><span class="pun">-</span><span class="lit">4j</span><span class="pun">),</span><span class="pln"> </span><span class="str">'radians. Degrees ='</span><span class="pun">,</span><span class="pln"> numpy</span><span class="pun">.</span><span class="pln">degrees</span><span class="pun">(</span><span class="pln">cmath</span><span class="pun">.</span><span class="pln">phase</span><span class="pun">(-</span><span class="lit">4</span><span class="pun">-</span><span class="lit">4j</span><span class="pun">)))</span><span class="pln">
+</span><span class="com"># we can get phase using math.atan2() function too</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'Complex number phase using math.atan2() ='</span><span class="pun">,</span><span class="pln"> math</span><span class="pun">.</span><span class="pln">atan2</span><span class="pun">(</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">))</span></pre><h2>Result</h2><pre class="result notranslate">4+ 4j Phase = 0.7853981633974483
+Phase in Degrees = 45.0
+-4-4j Phase = -2.356194490192345 radians. Degrees = -135.0
+Complex number phase using math.atan2() = 1.1071487177940904</pre><h3>cmath module constants</h3><p>There are a couple of constans available in cmath module that are used in the complex number calculations:</p><pre class="prettyprint notranslate prettyprinted" style=""><span class="kwd">import</span><span class="pln"> cmath
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'π ='</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">pi</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'e ='</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">e</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'tau ='</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">tau</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'Positive infinity ='</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">inf</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'Positive Complex infinity ='</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">infj</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'NaN ='</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">nan</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'NaN Complex ='</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">nanj</span><span class="pun">)</span></pre><h2>Result</h2><pre class="result notranslate">π = 3.141592653589793
+e = 2.718281828459045
+tau = 6.283185307179586
+Positive infinity = inf
+Positive Complex infinity = infj
+NaN = nan
+NaN Complex = nanj</pre><h3>Power and Log Functions</h3><p>The cmath() module provides some useful functions for logarithmic and power operations:</p><pre class="prettyprint notranslate prettyprinted" style=""><span class="kwd">import</span><span class="pln"> cmath
+c </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="lit">2j</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'e^c ='</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">exp</span><span class="pun">(</span><span class="pln">c</span><span class="pun">))</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'log2(c) ='</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">c</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">))</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'log10(c) ='</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">log10</span><span class="pun">(</span><span class="pln">c</span><span class="pun">))</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'sqrt(c) ='</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">sqrt</span><span class="pun">(</span><span class="pln">c</span><span class="pun">))</span></pre><h2>Result</h2><pre class="result notranslate">e^c = (-1.1312043837568135+2.4717266720048188j)
+log2(c) = (1.1609640474436813+1.5972779646881088j)
+log10(c) = (0.3494850021680094+0.480828578784234j)
+sqrt(c) = (1.272019649514069+0.7861513777574233j)</pre><h3>Trigonometric Functions</h3><pre class="prettyprint notranslate prettyprinted" style=""><span class="kwd">import</span><span class="pln"> cmath
+c </span><span class="pun">=</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="lit">4j</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'arc sine value:\n '</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">asin</span><span class="pun">(</span><span class="pln">c</span><span class="pun">))</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'arc cosine value :\n'</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">acos</span><span class="pun">(</span><span class="pln">c</span><span class="pun">))</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'arc tangent value of complex number c :\n'</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">atan</span><span class="pun">(</span><span class="pln">c</span><span class="pun">))</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'sine value:\n'</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">sin</span><span class="pun">(</span><span class="pln">c</span><span class="pun">))</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'cosine value:\n'</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">cos</span><span class="pun">(</span><span class="pln">c</span><span class="pun">))</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'tangent value:\n'</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">tan</span><span class="pun">(</span><span class="pln">c</span><span class="pun">))</span></pre><h2>Result</h2><pre class="result notranslate">arc sine value:
+(0.4538702099631225+2.198573027920936j)
+arc cosine value :
+(1.1169261168317741-2.198573027920936j)
+arc tangent value of complex number c :
+(1.4670482135772953+0.20058661813123432j)
+sine value:
+(24.83130584894638-11.356612711218174j)
+cosine value:
+(-11.36423470640106-24.814651485634187j)
+tangent value:
+(-0.0005079806234700387+1.0004385132020523j)</pre><h3>Hyperbolic Functions</h3><pre class="prettyprint notranslate prettyprinted" style=""><span class="kwd">import</span><span class="pln"> cmath
+c </span><span class="pun">=</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="lit">4j</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'Inverse hyperbolic sine value: \n'</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">asinh</span><span class="pun">(</span><span class="pln">c</span><span class="pun">))</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'Inverse hyperbolic cosine value: \n'</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">acosh</span><span class="pun">(</span><span class="pln">c</span><span class="pun">))</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'Inverse hyperbolic tangent value: \n'</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">atanh</span><span class="pun">(</span><span class="pln">c</span><span class="pun">))</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'Hyperbolic sine value: \n'</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">sinh</span><span class="pun">(</span><span class="pln">c</span><span class="pun">))</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'Hyperbolic cosine value: \n'</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">cosh</span><span class="pun">(</span><span class="pln">c</span><span class="pun">))</span><span class="pln">
+</span><span class="kwd">print</span><span class="pun">(</span><span class="str">'Hyperbolic tangent value: \n'</span><span class="pun">,</span><span class="pln"> cmath</span><span class="pun">.</span><span class="pln">tanh</span><span class="pun">(</span><span class="pln">c</span><span class="pun">))</span></pre><h2>Result</h2><pre class="result notranslate">Inverse hyperbolic sine value:
+(2.183585216564564+1.096921548830143j)
+Inverse hyperbolic cosine value:
+(2.198573027920936+1.1169261168317741j)
+Inverse hyperbolic tangent value:
+(0.09641562020299617+1.3715351039616865j)
+Hyperbolic sine value:
+(-2.370674169352002-2.8472390868488278j)
+Hyperbolic cosine value:
+(-2.4591352139173837-2.744817006792154j)
+Hyperbolic tangent value:
+(1.0046823121902348+0.03642336924740368j)</pre><div class="clear"></div>
+<div class="mui-panel profile-panel">
+<a href="https://www.tutorialspoint.com/answers/Chandu-Yadav-1" target="_blank" title="raja" class="mui--pull-left">
+<img class="profile" src="https://www.tutorialspoint.com/assets/profiles/22330/profile/60_142811-1519038104.jpg" alt="raja">
+</a>  
+<div class="qa_author">
+<a href="https://www.tutorialspoint.com/answers/Chandu-Yadav-1" target="_blank"><span>Chandu yadav</span></a> 
+</div> 	
+<div class="qa_answer_dtm">
+Published on 02-May-2019 12:45:38</div>
+<div class="author-caret">
+<a href="https://www.tutorialspoint.com/answers/Chandu-Yadav-1" target="_blank">
+<i class="fal fa-chevron-circle-right"></i>
+</a>
+</div>					
+</div>   
+<div class="mui-container-fluid button-borders show">
+<div class="pre-btn">
+<a href="/questions/index.php"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="https://www.tutorialspoint.com/complex-numbers-in-cplusplus">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads" id="google-bottom-ads">
+<div>Advertisements</div>
+<div>
+<div id="adp_bottom_ads"><div id="00000001-4bb031fc-fc58-4ff8-b043-c948bff7b9c9" class="_ap_apex_ad" data-section="00000001-4bb031fc-fc58-4ff8-b043-c948bff7b9c9" data-orig-id="e7ddd6f7-1ab0-494a-bade-887daa4373a0" data-render-time="1621098245431" data-ap-network="adpTags" style="text-align: center; margin: 10px auto; width: 580px; height: 400px; overflow: hidden; display: block;"><div id="ADP_40046_580x400_00000001-4bb031fc-fc58-4ff8-b043-c948bff7b9c9" style="text-align: center; margin: 0 auto;" data-google-query-id="CL3r-siVzPACFVK0nwodsjYNmw">
+
+<div id="google_ads_iframe_/103512698/ADP_40046_580X400_e7ddd6f7-1ab0-494a-bade-887daa4373a0_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe frameborder="0" src="https://8c6f8ca466015d40ded0109dd56bafd1.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html" id="google_ads_iframe_/103512698/ADP_40046_580X400_e7ddd6f7-1ab0-494a-bade-887daa4373a0_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="300" height="250" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="conversion-measurement 'src'" data-google-container-id="3" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div></div></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+</div>
+<div class="space-bottom"></div>
+</div>
+</div>
